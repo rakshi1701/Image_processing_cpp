@@ -2,7 +2,11 @@
 #include <iostream>
 
 int main(){
-    std::string image_path = "data/img1.jpg";
+    // std::string image_path = "data/img1.jpg";
+    std::string image_path;
+    std::cout << "enter image path: "<<std::endl;
+    std::cin >> image_path;
+
     cv::Mat image = cv::imread(image_path);
 
     if (image.empty()){
@@ -19,6 +23,9 @@ int main(){
 
     cv::Mat gray_image;
     cv::cvtColor(resized_image, gray_image, cv::COLOR_BGR2GRAY);
+
+    // Save image
+    cv::imwrite("data/resized_image.jpg", resized_image);
 
     cv::imshow("Original Image", image);
     cv::imshow("Resized Image", resized_image);
