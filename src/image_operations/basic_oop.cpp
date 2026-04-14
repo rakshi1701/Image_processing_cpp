@@ -1,4 +1,4 @@
-#include "image_operations/image_operations.h"
+#include "image_operations.h"
 #include <iostream>
 
 int main(){
