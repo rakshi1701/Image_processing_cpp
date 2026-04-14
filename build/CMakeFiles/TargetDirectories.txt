@@ -1,0 +1,3 @@
+/home/rakshith/Tutorial/Image_processing_cpp/build/CMakeFiles/oop_image.dir
+/home/rakshith/Tutorial/Image_processing_cpp/build/CMakeFiles/edit_cache.dir
+/home/rakshith/Tutorial/Image_processing_cpp/build/CMakeFiles/rebuild_cache.dir
