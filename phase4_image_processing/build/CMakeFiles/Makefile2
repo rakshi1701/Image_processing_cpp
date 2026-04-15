@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_pro
 
 # The main recursive "all" target.
 all: CMakeFiles/phase4.dir/all
+all: CMakeFiles/cli_image.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/phase4.dir/clean
+clean: CMakeFiles/cli_image.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,7 +83,7 @@ clean: CMakeFiles/phase4.dir/clean
 CMakeFiles/phase4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=1,2,3 "Built target phase4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=4,5,6 "Built target phase4"
 .PHONY : CMakeFiles/phase4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +101,32 @@ phase4: CMakeFiles/phase4.dir/rule
 CMakeFiles/phase4.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/clean
 .PHONY : CMakeFiles/phase4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cli_image.dir
+
+# All Build rule for target.
+CMakeFiles/cli_image.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=1,2,3 "Built target cli_image"
+.PHONY : CMakeFiles/cli_image.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cli_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cli_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles 0
+.PHONY : CMakeFiles/cli_image.dir/rule
+
+# Convenience name for target.
+cli_image: CMakeFiles/cli_image.dir/rule
+.PHONY : cli_image
+
+# clean rule for target.
+CMakeFiles/cli_image.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/clean
+.PHONY : CMakeFiles/cli_image.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

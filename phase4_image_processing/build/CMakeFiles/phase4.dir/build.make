@@ -69,24 +69,10 @@ include CMakeFiles/phase4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/phase4.dir/flags.make
 
-CMakeFiles/phase4.dir/src/image_processor.cpp.o: CMakeFiles/phase4.dir/flags.make
-CMakeFiles/phase4.dir/src/image_processor.cpp.o: ../src/image_processor.cpp
-CMakeFiles/phase4.dir/src/image_processor.cpp.o: CMakeFiles/phase4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/phase4.dir/src/image_processor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/phase4.dir/src/image_processor.cpp.o -MF CMakeFiles/phase4.dir/src/image_processor.cpp.o.d -o CMakeFiles/phase4.dir/src/image_processor.cpp.o -c /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/image_processor.cpp
-
-CMakeFiles/phase4.dir/src/image_processor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phase4.dir/src/image_processor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/image_processor.cpp > CMakeFiles/phase4.dir/src/image_processor.cpp.i
-
-CMakeFiles/phase4.dir/src/image_processor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phase4.dir/src/image_processor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/image_processor.cpp -o CMakeFiles/phase4.dir/src/image_processor.cpp.s
-
 CMakeFiles/phase4.dir/src/main.cpp.o: CMakeFiles/phase4.dir/flags.make
 CMakeFiles/phase4.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/phase4.dir/src/main.cpp.o: CMakeFiles/phase4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/phase4.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/phase4.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/phase4.dir/src/main.cpp.o -MF CMakeFiles/phase4.dir/src/main.cpp.o.d -o CMakeFiles/phase4.dir/src/main.cpp.o -c /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/main.cpp
 
 CMakeFiles/phase4.dir/src/main.cpp.i: cmake_force
@@ -97,16 +83,30 @@ CMakeFiles/phase4.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phase4.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/main.cpp -o CMakeFiles/phase4.dir/src/main.cpp.s
 
+CMakeFiles/phase4.dir/src/image_processor.cpp.o: CMakeFiles/phase4.dir/flags.make
+CMakeFiles/phase4.dir/src/image_processor.cpp.o: ../src/image_processor.cpp
+CMakeFiles/phase4.dir/src/image_processor.cpp.o: CMakeFiles/phase4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/phase4.dir/src/image_processor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/phase4.dir/src/image_processor.cpp.o -MF CMakeFiles/phase4.dir/src/image_processor.cpp.o.d -o CMakeFiles/phase4.dir/src/image_processor.cpp.o -c /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/image_processor.cpp
+
+CMakeFiles/phase4.dir/src/image_processor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phase4.dir/src/image_processor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/image_processor.cpp > CMakeFiles/phase4.dir/src/image_processor.cpp.i
+
+CMakeFiles/phase4.dir/src/image_processor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phase4.dir/src/image_processor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/image_processor.cpp -o CMakeFiles/phase4.dir/src/image_processor.cpp.s
+
 # Object files for target phase4
 phase4_OBJECTS = \
-"CMakeFiles/phase4.dir/src/image_processor.cpp.o" \
-"CMakeFiles/phase4.dir/src/main.cpp.o"
+"CMakeFiles/phase4.dir/src/main.cpp.o" \
+"CMakeFiles/phase4.dir/src/image_processor.cpp.o"
 
 # External object files for target phase4
 phase4_EXTERNAL_OBJECTS =
 
-phase4: CMakeFiles/phase4.dir/src/image_processor.cpp.o
 phase4: CMakeFiles/phase4.dir/src/main.cpp.o
+phase4: CMakeFiles/phase4.dir/src/image_processor.cpp.o
 phase4: CMakeFiles/phase4.dir/build.make
 phase4: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 phase4: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d

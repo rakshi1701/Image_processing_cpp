@@ -129,12 +129,50 @@ phase4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/build
 .PHONY : phase4/fast
 
+#=============================================================================
+# Target rules for targets named cli_image
+
+# Build rule for target.
+cli_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli_image
+.PHONY : cli_image
+
+# fast build rule for target.
+cli_image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/build
+.PHONY : cli_image/fast
+
+src/cli_main.o: src/cli_main.cpp.o
+.PHONY : src/cli_main.o
+
+# target to build an object file
+src/cli_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/cli_main.cpp.o
+.PHONY : src/cli_main.cpp.o
+
+src/cli_main.i: src/cli_main.cpp.i
+.PHONY : src/cli_main.i
+
+# target to preprocess a source file
+src/cli_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/cli_main.cpp.i
+.PHONY : src/cli_main.cpp.i
+
+src/cli_main.s: src/cli_main.cpp.s
+.PHONY : src/cli_main.s
+
+# target to generate assembly for a file
+src/cli_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/cli_main.cpp.s
+.PHONY : src/cli_main.cpp.s
+
 src/image_processor.o: src/image_processor.cpp.o
 .PHONY : src/image_processor.o
 
 # target to build an object file
 src/image_processor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/src/image_processor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/image_processor.cpp.o
 .PHONY : src/image_processor.cpp.o
 
 src/image_processor.i: src/image_processor.cpp.i
@@ -143,6 +181,7 @@ src/image_processor.i: src/image_processor.cpp.i
 # target to preprocess a source file
 src/image_processor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/src/image_processor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/image_processor.cpp.i
 .PHONY : src/image_processor.cpp.i
 
 src/image_processor.s: src/image_processor.cpp.s
@@ -151,6 +190,7 @@ src/image_processor.s: src/image_processor.cpp.s
 # target to generate assembly for a file
 src/image_processor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/src/image_processor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/image_processor.cpp.s
 .PHONY : src/image_processor.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -185,7 +225,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... cli_image"
 	@echo "... phase4"
+	@echo "... src/cli_main.o"
+	@echo "... src/cli_main.i"
+	@echo "... src/cli_main.s"
 	@echo "... src/image_processor.o"
 	@echo "... src/image_processor.i"
 	@echo "... src/image_processor.s"
