@@ -142,6 +142,19 @@ cli_image/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/build
 .PHONY : cli_image/fast
 
+#=============================================================================
+# Target rules for targets named json_exe
+
+# Build rule for target.
+json_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 json_exe
+.PHONY : json_exe
+
+# fast build rule for target.
+json_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/build
+.PHONY : json_exe/fast
+
 src/cli_main.o: src/cli_main.cpp.o
 .PHONY : src/cli_main.o
 
@@ -173,6 +186,7 @@ src/image_processor.o: src/image_processor.cpp.o
 src/image_processor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/src/image_processor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/image_processor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/src/image_processor.cpp.o
 .PHONY : src/image_processor.cpp.o
 
 src/image_processor.i: src/image_processor.cpp.i
@@ -182,6 +196,7 @@ src/image_processor.i: src/image_processor.cpp.i
 src/image_processor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/src/image_processor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/image_processor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/src/image_processor.cpp.i
 .PHONY : src/image_processor.cpp.i
 
 src/image_processor.s: src/image_processor.cpp.s
@@ -191,7 +206,32 @@ src/image_processor.s: src/image_processor.cpp.s
 src/image_processor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/src/image_processor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/src/image_processor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/src/image_processor.cpp.s
 .PHONY : src/image_processor.cpp.s
+
+src/json_main.o: src/json_main.cpp.o
+.PHONY : src/json_main.o
+
+# target to build an object file
+src/json_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/src/json_main.cpp.o
+.PHONY : src/json_main.cpp.o
+
+src/json_main.i: src/json_main.cpp.i
+.PHONY : src/json_main.i
+
+# target to preprocess a source file
+src/json_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/src/json_main.cpp.i
+.PHONY : src/json_main.cpp.i
+
+src/json_main.s: src/json_main.cpp.s
+.PHONY : src/json_main.s
+
+# target to generate assembly for a file
+src/json_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/src/json_main.cpp.s
+.PHONY : src/json_main.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -226,6 +266,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cli_image"
+	@echo "... json_exe"
 	@echo "... phase4"
 	@echo "... src/cli_main.o"
 	@echo "... src/cli_main.i"
@@ -233,6 +274,9 @@ help:
 	@echo "... src/image_processor.o"
 	@echo "... src/image_processor.i"
 	@echo "... src/image_processor.s"
+	@echo "... src/json_main.o"
+	@echo "... src/json_main.i"
+	@echo "... src/json_main.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

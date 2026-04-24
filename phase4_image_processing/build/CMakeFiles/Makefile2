@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_pro
 # The main recursive "all" target.
 all: CMakeFiles/phase4.dir/all
 all: CMakeFiles/cli_image.dir/all
+all: CMakeFiles/json_exe.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/phase4.dir/clean
 clean: CMakeFiles/cli_image.dir/clean
+clean: CMakeFiles/json_exe.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +85,7 @@ clean: CMakeFiles/cli_image.dir/clean
 CMakeFiles/phase4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phase4.dir/build.make CMakeFiles/phase4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=4,5,6 "Built target phase4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=7,8,9 "Built target phase4"
 .PHONY : CMakeFiles/phase4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +129,32 @@ cli_image: CMakeFiles/cli_image.dir/rule
 CMakeFiles/cli_image.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_image.dir/build.make CMakeFiles/cli_image.dir/clean
 .PHONY : CMakeFiles/cli_image.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/json_exe.dir
+
+# All Build rule for target.
+CMakeFiles/json_exe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles --progress-num=4,5,6 "Built target json_exe"
+.PHONY : CMakeFiles/json_exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/json_exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/json_exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/build/CMakeFiles 0
+.PHONY : CMakeFiles/json_exe.dir/rule
+
+# Convenience name for target.
+json_exe: CMakeFiles/json_exe.dir/rule
+.PHONY : json_exe
+
+# clean rule for target.
+CMakeFiles/json_exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_exe.dir/build.make CMakeFiles/json_exe.dir/clean
+.PHONY : CMakeFiles/json_exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

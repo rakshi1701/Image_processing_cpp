@@ -11,6 +11,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "/usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake"
+  "/usr/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake"
+  "/usr/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake"
@@ -51,4 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/phase4.dir/DependInfo.cmake"
   "CMakeFiles/cli_image.dir/DependInfo.cmake"
+  "CMakeFiles/json_exe.dir/DependInfo.cmake"
   )

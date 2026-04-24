@@ -1,7 +1,7 @@
-CMakeFiles/oop_image.dir/src/image_operations/basic_oop.cpp.o: \
- /home/rakshith/Tutorial/Image_processing_cpp/src/image_operations/basic_oop.cpp \
+CMakeFiles/json_exe.dir/src/image_processor.cpp.o: \
+ /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/src/image_processor.cpp \
  /usr/include/stdc-predef.h \
- /home/rakshith/Tutorial/Image_processing_cpp/src/include/image_operations.h \
+ /home/rakshith/Tutorial/Image_processing_cpp/phase4_image_processing/include/image_processor.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

@@ -1,0 +1,6 @@
+{
+    "image_path": "data/img1.jpg",
+    "output_path": "output.jpg",
+    "save": true,
+    "display": true
+}
